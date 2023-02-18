@@ -1,0 +1,58 @@
+@font-face {
+  font-family: "Aneliza-SemiBold";
+  src: url(./fonts/transfonter.org-20230123-232449/Aneliza-SemiBold.woff);
+}
+
+@font-face {
+  font-family: "Analiza";
+  src: url(./fonts/transfonter.org-20230123-232449/Aneliza.woff);
+}
+
+body {
+  margin: 0 auto;
+  background-color: #242424;
+}
+
+button {
+  background-color: white;
+}
+button:hover {
+  background-color: #3f69c5;
+  cursor: pointer;
+}
+
+.banner {
+  color: #bebaba;
+}
+
+.massdelete {
+  background-color: #5f5d5d;
+}
+
+.massdelete:hover {
+  background-color: #b68f8f;
+}
+
+.cancel {
+  background-color: #5f5d5d;
+}
+.cancel:hover {
+  background-color: #daae35;
+}
+
+input {
+  height: 2rem;
+  border-radius: 0.5rem;
+}
+
+input:hover {
+  cursor: pointer;
+}
+option {
+  border-radius: 1rem;
+  height: "3rem";
+}
+
+select:hover {
+  cursor: pointer;
+}

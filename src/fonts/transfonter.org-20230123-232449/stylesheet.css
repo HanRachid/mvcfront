@@ -1,0 +1,16 @@
+@font-face {
+  font-family: "Aneliza";
+  src: url("Aneliza.woff2") format("woff2"), url("Aneliza.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Aneliza-SemiBold";
+  src: url("Aneliza-SemiBold.woff2") format("woff2"),
+    url("Aneliza-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
