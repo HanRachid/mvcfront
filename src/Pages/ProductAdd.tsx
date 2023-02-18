@@ -60,7 +60,6 @@ export default function ProductAdd() {
     } else if (!isNaN(e.target.value)) {
       setProduct({ ...product, [e.target.className]: e.target.value });
     } else {
-      window.alert("Please, provide the data of indicated type");
       e.target.value = product[e.target.className];
     }
   }
@@ -84,19 +83,22 @@ export default function ProductAdd() {
   }
   async function submit() {
     if (valid()) {
-      const submitproducts = await fetch("http://127.0.0.1:8000/reactadd", {
-        method: "post",
-        mode: "cors",
-        headers: {
-          Accept: "application/json",
-          "Content-Type": "application/json",
-        },
+      const submitproducts = await fetch(
+        "https://scandiwebassignement.000webhostapp.com/public/index.php/reactadd",
+        {
+          method: "post",
+          mode: "cors",
+          headers: {
+            Accept: "application/json",
+            "Content-Type": "application/json",
+          },
 
-        body: JSON.stringify({
-          ...product,
-          sku: product.sku + makeid(5),
-        }),
-      });
+          body: JSON.stringify({
+            ...product,
+            sku: product.sku + makeid(5),
+          }),
+        }
+      );
 
       const response = await submitproducts.json();
       console.log(response);
